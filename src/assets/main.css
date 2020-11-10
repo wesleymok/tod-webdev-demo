@@ -1,0 +1,45 @@
+@tailwind base;
+
+.theme-dark {
+  --bg-background-primary: #1b1b1b;
+  --bg-background-secondary: #102C44;
+  --bg-background-tertiary: #1E3951;
+
+  --bg-background-form: #1a202c;
+
+  --text-copy-primary: #cbd5e0;
+  --text-copy-secondary: #e2e8f0;
+
+  --border-border-color-primary:  #1a202c;
+  --header-color: #FFFFFF;
+}
+
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  @media (min-width: 640px) {
+    .container {
+      max-width: 640px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 768px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 800px;
+    }
+  }
+
+  .content-wrapper {
+    transition: background-color .5s;
+  }
+  
+@tailwind components;
+@tailwind utilities;
