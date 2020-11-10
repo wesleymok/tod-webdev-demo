@@ -78,7 +78,7 @@
             <div class="my-1 px-1 w-full overflow-hidden lg:w-1/2 xl:w-1/2">
               <div class="h-full bg-background-primary bg-white p-4 flex flex-col justify-between leading-normal">
                   <div class="mb-8">
-                    <div class="text-orange-500 font-semibold text-2xl mb-2">Shop the Sale</div>
+                    <div class="text-orange-500 font-semibold text-3xl mb-2">Shop the Sale</div>
                     <br>
                     <p>Choosing an e-bike can be confusing. That's why we're available 24/7 for consultations. Simply choose the model you're interested in, and we'll reach out to confirm a booking time to review your choice.</p>
                   </div>
@@ -167,9 +167,23 @@
             </div>
           
             <div class="my-1 px-1 w-full overflow-hidden lg:w-1/2 xl:w-1/2">
-
+              
             </div>
-          
+            
+            <div class="h-full bg-background-primary bg-white p-4 flex flex-col justify-between leading-normal">
+                <div class="mb-8">
+                    <div class="text-orange-500 font-semibold text-xl mb-2">About Us</div>
+                    <p>More than just a simple bike shop, City Bikes is the result of a shared dream to help people achieve an easier, greener, and faster commute. Open since 2016, our shop is a family-owned business that specializes in e-bikes.</p>
+                  </div>
+                <div class="mb-8">
+                  <div class="text-orange-500 font semibold text-xl mb-2">Why Choose City Cycles?</div>
+                  <ul class="list-disc">
+                    <li>Canada-Wide Shipping</li>
+                    <li>Price match guaranteed</li>
+                    <li>Largest selection in Canada</li>
+                  </ul>
+                </div>
+            </div>
           </div>
         </div>
   
