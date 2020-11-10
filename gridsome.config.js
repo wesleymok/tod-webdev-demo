@@ -1,5 +1,5 @@
 const tailwind = require('tailwindcss')
-const purgecss = require('@fullhuman/postcss-purgecss')
+// const purgecss = require('@fullhuman/postcss-purgecss')
 
 const postcssPlugins = [
 	tailwind(),
