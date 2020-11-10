@@ -9,7 +9,7 @@ const postcssPlugins = [
 module.exports = {
     siteUrl: 'https://wesleymok.github.io',
     siteName: 'City Cycles',
-    pathPrefix: '/citycycles',
+    pathPrefix: '/tod-webdev-demo',
     icon: ' ',
     plugins: [],
     css: {
