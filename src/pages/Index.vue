@@ -2,9 +2,9 @@
     <Layout>
         <div class="hero bg-gray-100 py-8">
           <!-- container -->
-          <div class="hero container px-4 sm:px-8 lg:px-16 xl:px-20 mx-auto">
+          <div class="hero container bg-gray-100 py-8 px-4 justify-between relative sm:px-8 lg:px-16 xl:px-20 mx-auto">
               <!-- hero wrapper -->
-              <div class="hero-wrapper grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+              <div class="hero-wrapper flex flex-wrap -mx-1 overflow-hidden grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
   
                   <!-- hero text -->
                 <div class="hero-text col-span-6">
@@ -17,7 +17,8 @@
                       <!-- hero image -->
                       <div class="hero-image col-span-6">
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<div class="flex">
+  <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 480 480" style="enable-background:new 0 0 480 480;" xml:space="preserve" width="420" height="420">
 <g>
 	<polygon style="fill:#CECCCB;" points="256,208.008 224,208.008 224,224.008 231.549,224.008 216.721,272.855 232.032,277.512 
@@ -64,6 +65,8 @@
 	256,224.008 256,208.008 "/>
 </svg>
 
+</div>
+
                       </div>
                   </div>
               </div>
@@ -73,7 +76,7 @@
 
         </div>
         <div class="events container mx-auto py-6">
-            <div class="flex flex-wrap -mx-1 overflow-hidden">
+            <div class="flex flex-wrap -mx-1 overflow-hidden sm:-mx-1">
   
             <div class="my-1 px-1 w-full overflow-hidden lg:w-1/2 xl:w-1/2">
               <div class="h-full bg-background-primary bg-white p-4 flex flex-col justify-between leading-normal">
@@ -84,7 +87,7 @@
                   </div>
                   <div class="flex flex-wrap -mx-2 overflow-hidden">
 
-                      <div class="my-2 px-2 w-1/2 overflow-hidden sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2">
+                      <div class="my-1 px-1 w-full overflow-hidden md:w-1/2">
                         <!-- Column Content -->
                         <div class="bg-background-primary rounded border-t border-r border-b border-l border-gray-400 lg:border-gray-400 bg-white p-4 flex flex-col justify-between leading-normal shadow-md">
                             <div class="mb-2">
@@ -97,7 +100,7 @@
                         </div>
                       </div>
                     
-                      <div class="my-2 px-2 w-1/2 overflow-hidden sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2">
+                      <div class="my-1 px-1 w-full overflow-hidden md:w-1/2">
                         <!-- Column Content -->
                         <div class="bg-background-primary rounded border-t border-r border-b border-l border-gray-400 lg:border-gray-400 bg-white p-4 flex flex-col justify-between leading-normal shadow-md">
                             <div class="mb-2">
@@ -110,7 +113,7 @@
                         </div>
                       </div>
                     
-                      <div class="my-2 px-2 w-1/2 overflow-hidden sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2">
+                      <div class="my-1 px-1 w-full overflow-hidden md:w-1/2">
                         <!-- Column Content -->
                         <div class="bg-background-primary rounded border-t border-r border-b border-l border-gray-400 lg:border-gray-400 bg-white p-4 flex flex-col justify-between leading-normal shadow-md">
                             <div class="mb-2">
@@ -123,7 +126,7 @@
                         </div>
                       </div>
                     
-                      <div class="my-2 px-2 w-1/2 overflow-hidden sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2">
+                      <div class="my-1 px-1 w-full overflow-hidden md:w-1/2">
                         <!-- Column Content -->
                         <div class="bg-background-primary rounded border-t border-r border-b border-l border-gray-400 lg:border-gray-400 bg-white p-4 flex flex-col justify-between leading-normal shadow-md">
                             <div class="mb-2">
@@ -136,7 +139,7 @@
                         </div>
                       </div>
                     
-                      <div class="my-2 px-2 w-1/2 overflow-hidden sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2">
+                      <div class="my-1 px-1 w-full overflow-hidden md:w-1/2">
                         <!-- Column Content -->
                         <div class="bg-background-primary rounded border-t border-r border-b border-l border-gray-400 lg:border-gray-400 bg-white p-4 flex flex-col justify-between leading-normal shadow-md">
                             <div class="mb-2">
@@ -149,7 +152,7 @@
                         </div>
                       </div>
                     
-                      <div class="my-2 px-2 w-1/2 overflow-hidden sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2">
+                      <div class="my-1 px-1 w-full overflow-hidden md:w-1/2">
                         <!-- Column Content -->
                         <div class="bg-background-primary rounded border-t border-r border-b border-l border-gray-400 lg:border-gray-400 bg-white p-4 flex flex-col justify-between leading-normal shadow-md">
                             <div class="mb-2">
@@ -173,7 +176,7 @@
             <div class="h-full bg-background-primary bg-white p-4 flex flex-col justify-between leading-normal">
                 <div class="mb-8">
                     <div class="text-orange-500 font-semibold text-xl mb-2">About Us</div>
-                    <p>More than just a simple bike shop, City Bikes is the result of a shared dream to help people achieve an easier, greener, and faster commute. Open since 2016, our shop is a family-owned business that specializes in e-bikes.</p>
+                    <p>More than just a simple bike shop, City Cycles is the result of a shared dream to help people achieve an easier, greener, and faster commute. Open since 2016, our shop is a family-owned business that specializes in e-bikes.</p>
                   </div>
                 <div class="mb-8">
                   <div class="text-orange-500 font semibold text-xl mb-2">Why Choose City Cycles?</div>
