@@ -82,7 +82,7 @@
               <div class="h-full bg-background-primary bg-white p-4 flex flex-col justify-between leading-normal">
                   <div class="mb-8">
                     <div class="text-orange-500 font-semibold text-3xl mb-2">Shop the Sale</div>
-                    <br>
+                    
                     <p>Choosing an e-bike can be confusing. That's why we're available 24/7 for consultations. Simply choose the model you're interested in, and we'll reach out to confirm a booking time to review your choice.</p>
                   </div>
                   <div class="flex flex-wrap -mx-2 overflow-hidden">
@@ -170,8 +170,64 @@
             </div>
           
             <div class="my-1 px-1 w-full overflow-hidden lg:w-1/2 xl:w-1/2">
-              
-            </div>
+              <div class="h-full bg-background-primary bg-white p-4 flex flex-col justify-between leading-normal">
+                  
+                      <div class="text-orange-500 font-semibold text-2xl mb-2">Book Your Consultation</div>
+                        <form class="w-full max-w-lg">
+                          <div class="flex flex-wrap -mx-3 mb-6">
+                              <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                              <input class="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="First Name">
+                              </div>
+                              <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                                <input class="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-last-name" type="text" placeholder="Last Name">
+                              </div>
+                          </div>
+                          <div class="flex flex-wrap -mx-3 mb-6">
+                              <div class="w-full px-3">
+                                <input class="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-email" type="text" placeholder="Email">
+                              </div>
+                          </div>
+                          <div class="flex flex-wrap -mx-3 mb-6">
+                              <div class="w-full px-3">
+                                <input class="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-email" type="text" placeholder="Country">
+                              </div>
+                          </div>
+                          <div class="inline-block relative w-64">
+                              <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                                <option>Product Interest</option>
+                                <option>Crosslite DX 300</option>
+                                <option>Crosslite EVO 9D</option>
+                                <option>Bullseye EVO 2020</option>
+                                <option>Bulleye Touring Hybrid 8D</option>
+                                <option>Gazelle 4D</option>
+                                <option>Gazelle Touring 6D</option>
+                              </select>
+                              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                              </div>
+                            </div>
+                            <div class="flex flex-wrap -mx-3 mb-6 py-4">
+                              <div class="w-full px-3">
+                                  <label class="block text-gray-500 font-semibold">
+                                  <input class="mr-3" type="checkbox">
+                                  <span class="text-sm">
+                                    I agree to receive marketing communications from City Cycles
+                                  </span>
+                                </label>
+                              </div>
+                            </div>
+                              <div class="md:flex md:items-center">
+                                <div class="md:w-2/3">
+                                  <button class="shadow bg-orange-500 hover:bg-orange-400 focus:shadow-outline focus:outline-none text-white font-semibold py-2 px-4 rounded" type="button">
+                                    Sign Up
+                                  </button>
+                                </div>
+                              </div>
+                        </form>
+                  
+                </div>
+
+                </div>
             
             <div class="h-full bg-background-primary bg-white p-4 flex flex-col justify-between leading-normal">
                 <div class="mb-8">
