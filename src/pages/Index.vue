@@ -1,12 +1,12 @@
 <template>
     <Layout>
-      <div class="hero bg-gray-100 py-8">
+      <div class="hero bg-gray-100 py-4">
         <!-- container -->
-        <div class="hero container bg-gray-100 py-8 px-4 justify-between relative sm:px-8 lg:px-16 xl:px-20 mx-auto">
+        <div class="hero container bg-gray-100 py-8 px-8 justify-between relative sm:px-8 lg:px-16 xl:px-20 mx-auto">
           <!-- hero wrapper -->
           <div class="hero-wrapper flex flex-wrap -mx-1 overflow-hidden grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
             <!-- hero text -->
-            <div class="hero-text col-span-6 px-2">
+            <div class="hero-text col-span-6">
               <h1 class="font-semibold text-4xl md:text-5xl max-w-xl text-gray-900 leading-tight">Largest E-Bike Inventory Sale Ever</h1>
               <hr class="w-12 h-1 bg-orange-500 rounded-full mt-8">
                 <p class="text-xl text-gray-800 text-base leading-relaxed mt-8 font-semibold">Last chance to own a discounted 2019 model!</p>
