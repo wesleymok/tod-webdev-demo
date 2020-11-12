@@ -79,7 +79,7 @@
           <div class="my-1 px-1 w-full overflow-hidden lg:w-1/2 xl:w-1/2">
             <div class="h-full bg-background-primary bg-white p-4 flex flex-col justify-between leading-normal">
               <div class="mb-8">
-                <div class="text-orange-500 font-semibold text-3xl mb-2">Shop the Sale</div>
+                <div class="text-orange-500 font-semibold text-3xl mb-8">Shop the Sale</div>
                 <p>Choosing an e-bike can be confusing. That's why we're available 24/7 for consultations. Simply choose the model you're interested in, and we'll reach out to confirm a booking time to review your choice.</p>
               </div>
               <div class="flex flex-wrap -mx-2 overflow-hidden">
@@ -168,24 +168,24 @@
 
                 <div class="flex flex-wrap -mx-3 mb-6">
                   <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="first_name" maxlength="40" name="first_name" type="text" placeholder="First Name">
+                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="first_name" maxlength="40" name="first_name" type="text" placeholder="First Name" required>
                     </div>
                     <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                      <input class="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="last_name" maxlength="80" name="last_name" type="text" placeholder="Last Name">
+                      <input class="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="last_name" maxlength="80" name="last_name" type="text" placeholder="Last Name" required>
                       </div>
                     </div>
                     <div class="flex flex-wrap -mx-3 mb-6">
                       <div class="w-full px-3">
-                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="email" maxlength="80" name="email" type="text" placeholder="Email">
+                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="email" maxlength="80" name="email" type="email" placeholder="Email" required>
                         </div>
                       </div>
                       <div class="flex flex-wrap -mx-3 mb-6">
                         <div class="w-full px-3">
-                          <input class="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="country" maxlength="40" type="text" placeholder="Country">
+                          <input class="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="country" name="country" maxlength="40" type="text" placeholder="Country" required>
                           </div>
                         </div>
                         <div class="inline-block relative w-64">
-                          <select id="00N4x000000vf0Y" name="00N4x000000vf0Y" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline" multiple="multiple" title="Product Interest">
+                          <select id="00N4x000000vf0Y" name="00N4x000000vf0Y" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline" multiple="multiple" title="Product Interest" required>
                               <option value="Crosslite DX 300">Crosslite DX 300</option>
                               <option value="Crosslite EVO 9D">Crosslite EVO 9D</option>
                               <option value="Bullseye EVO 2020">Bullseye EVO 2020</option>
@@ -217,6 +217,13 @@
                                 </button>
                             </div>
                           </div>
+                          <!-- NEW FIELDS BEGIN -->
+                          <input  id="00N4x000000vhX6" name="00N4x000000vhX6" type="hidden" />
+                          <input  id="00N4x000000vhXB" name="00N4x000000vhXB" type="hidden" />
+                          <input  id="00N4x000000vhXG" name="00N4x000000vhXG" type="hidden" />
+                          <input  id="00N4x000000vhXL" name="00N4x000000vhXL" type="hidden" />
+                          <input  id="00N4x000000vhXQ" name="00N4x000000vhXQ" type="hidden" />
+                          <!-- NEW FIELDS ENDS -->
                         </form>
                       </div>
                     </div>
@@ -244,4 +251,27 @@
         title: 'City Cycles E-Bike Sale'
       }
     }
+
+function parseGET(param) {
+  var searchStr = document.location.search;
+  try {
+      var match = searchStr.match('[?&]' + param + '=([^&]+)');
+      if (match) {
+          var result = match[1];
+          result = result.replace(/\+/g, '%20');
+          result = decodeURIComponent(result);
+          return result;
+      } else {
+          return '';
+      }
+  } catch (e) {
+      return '';
+  }
+}
+ 
+document.getElementById('utm_source').value = parseGET('utm_source');
+document.getElementById('utm_medium').value = parseGET('utm_medium');
+document.getElementById('utm_campaign').value = parseGET('utm_campaign');
+document.getElementById('utm_term').value = parseGET('utm_term');
+document.getElementById('utm_content').value = parseGET('utm_content');
 </script>
