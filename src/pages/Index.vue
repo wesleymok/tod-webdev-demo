@@ -1,5 +1,8 @@
 <template>
     <Layout>
+      <head>
+          <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8"/>
+      </head>
       <div class="hero bg-gray-100 py-4">
         <!-- container -->
         <div class="hero container bg-gray-100 py-8 px-8 justify-between relative sm:px-8 lg:px-16 xl:px-20 mx-auto">
@@ -158,34 +161,37 @@
           <div class="my-1 px-1 w-full overflow-hidden lg:w-1/2 xl:w-1/2">
             <div class="h-full bg-background-primary bg-white p-4 flex flex-col justify-between leading-normal">
               <div class="text-orange-500 font-semibold text-2xl mb-2">Book Your Consultation</div>
-              <form class="w-full max-w-lg">
+              <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" class="w-full max-w-lg">
+
+                <input type=hidden name="oid" value="00D4x000000KBCW">
+                <input type=hidden name="retURL" value="https://wesleymok.github.io/tod-webdev-demo/submission/">
+
                 <div class="flex flex-wrap -mx-3 mb-6">
                   <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="First Name">
+                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="first_name" maxlength="40" name="first_name" type="text" placeholder="First Name">
                     </div>
                     <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                      <input class="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-last-name" type="text" placeholder="Last Name">
+                      <input class="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="last_name" maxlength="80" name="last_name" type="text" placeholder="Last Name">
                       </div>
                     </div>
                     <div class="flex flex-wrap -mx-3 mb-6">
                       <div class="w-full px-3">
-                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-email" type="text" placeholder="Email">
+                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="email" maxlength="80" name="email" type="text" placeholder="Email">
                         </div>
                       </div>
                       <div class="flex flex-wrap -mx-3 mb-6">
                         <div class="w-full px-3">
-                          <input class="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-email" type="text" placeholder="Country">
+                          <input class="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="country" maxlength="40" type="text" placeholder="Country">
                           </div>
                         </div>
                         <div class="inline-block relative w-64">
-                          <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
-                            <option>Product Interest</option>
-                            <option>Crosslite DX 300</option>
-                            <option>Crosslite EVO 9D</option>
-                            <option>Bullseye EVO 2020</option>
-                            <option>Bulleye Touring Hybrid 8D</option>
-                            <option>Gazelle 4D</option>
-                            <option>Gazelle Touring 6D</option>
+                          <select id="00N4x000000vf0Y" name="00N4x000000vf0Y" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline" multiple="multiple" title="Product Interest">
+                              <option value="Crosslite DX 300">Crosslite DX 300</option>
+                              <option value="Crosslite EVO 9D">Crosslite EVO 9D</option>
+                              <option value="Bullseye EVO 2020">Bullseye EVO 2020</option>
+                              <option value="Bullseye Touring Hybrid 8D">Bullseye Touring Hybrid 8D</option>
+                              <option value="Gazelle 4D">Gazelle 4D</option>
+                              <option value="Gazelle Touring 6D">Gazelle Touring 6D</option>
                           </select>
                           <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
                             <svg class="fill-current h-4 w-4"
@@ -197,7 +203,7 @@
                         <div class="flex flex-wrap -mx-3 mb-6 py-4">
                           <div class="w-full px-3">
                             <label class="block text-gray-500 font-semibold">
-                              <input class="mr-3" type="checkbox">
+                              <input id="00N4x000000vf17" name="00N4x000000vf17" value="1" class="mr-3" type="checkbox">
                                 <span class="text-sm">
                                       I agree to receive marketing communications from City Cycles
                                     </span>
@@ -206,9 +212,9 @@
                           </div>
                           <div class="md:flex md:items-center">
                             <div class="md:w-2/3">
-                              <button class="shadow bg-orange-500 hover:bg-orange-400 focus:shadow-outline focus:outline-none text-white font-semibold py-2 px-4 rounded" type="button">
-                                      Submit
-                                    </button>
+                              <button class="shadow bg-orange-500 hover:bg-orange-400 focus:shadow-outline focus:outline-none text-white font-semibold py-2 px-4 rounded" type="submit">
+                                    Submit
+                                </button>
                             </div>
                           </div>
                         </form>
@@ -230,12 +236,12 @@
                     </div>
                   </div>
                 </div>
-              </Layout>
-            </template>
-            <script>
-        export default {
-          metaInfo: {
-            title: 'City Cycles E-Bike Sale'
-          }
-        }
-    </script>
+    </Layout>
+</template>
+<script>
+    export default {
+      metaInfo: {
+        title: 'City Cycles E-Bike Sale'
+      }
+    }
+</script>
