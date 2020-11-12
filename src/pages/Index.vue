@@ -163,7 +163,7 @@
               <div class="text-orange-500 font-semibold text-2xl mb-2">Book Your Consultation</div>
               <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" class="w-full max-w-lg">
 
-                <input type=hidden name="oid" value="00D4x000000KBCW">
+                <input type=hidden name="oid" value="00D4x000000JWjA">
                 <input type=hidden name="retURL" value="https://wesleymok.github.io/tod-webdev-demo/submission/">
 
                 <div class="flex flex-wrap -mx-3 mb-6">
@@ -185,7 +185,7 @@
                           </div>
                         </div>
                         <div class="inline-block relative w-64">
-                          <select id="00N4x000000vf0Y" name="00N4x000000vf0Y" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline" multiple="multiple" title="Product Interest" required>
+                          <select id="00N4x000000vhv5" name="00N4x000000vhv5" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline" multiple="multiple" title="Product Interest" required>
                               <option value="Crosslite DX 300">Crosslite DX 300</option>
                               <option value="Crosslite EVO 9D">Crosslite EVO 9D</option>
                               <option value="Bullseye EVO 2020">Bullseye EVO 2020</option>
@@ -203,13 +203,20 @@
                         <div class="flex flex-wrap -mx-3 mb-6 py-4">
                           <div class="w-full px-3">
                             <label class="block text-gray-500 font-semibold">
-                              <input id="00N4x000000vf17" name="00N4x000000vf17" value="1" class="mr-3" type="checkbox">
+                              <input id="00N4x000000vhve" name="00N4x000000vhve" value="1" class="mr-3" type="checkbox">
                                 <span class="text-sm">
                                       I agree to receive marketing communications from City Cycles
                                     </span>
                               </label>
                             </div>
                           </div>
+                          <!-- NEW FIELDS BEGIN -->
+                          <input id="utm_source" name="00N4x000000vhvF" :value="utmSource" type="hidden" />
+                          <input id="utm_medium" name="00N4x000000vhvK" :value="utmMedium" type="hidden" />
+                          <input id="utm_term" name="00N4x000000vhvP" :value="utmTerm" type="hidden" />
+                          <input id="utm_campaign" name="00N4x000000vhvU" :value="utmCampaign" type="hidden" />
+                          <input id="utm_content" name="00N4x000000vhvZ" :value="utmContent" type="hidden" />
+                          <!-- NEW FIELDS ENDS -->
                           <div class="md:flex md:items-center">
                             <div class="md:w-2/3">
                               <button class="shadow bg-orange-500 hover:bg-orange-400 focus:shadow-outline focus:outline-none text-white font-semibold py-2 px-4 rounded" type="submit">
@@ -217,13 +224,6 @@
                                 </button>
                             </div>
                           </div>
-                          <!-- NEW FIELDS BEGIN -->
-                          <input  id="00N4x000000vhX6" name="00N4x000000vhX6" type="hidden" />
-                          <input  id="00N4x000000vhXB" name="00N4x000000vhXB" type="hidden" />
-                          <input  id="00N4x000000vhXG" name="00N4x000000vhXG" type="hidden" />
-                          <input  id="00N4x000000vhXL" name="00N4x000000vhXL" type="hidden" />
-                          <input  id="00N4x000000vhXQ" name="00N4x000000vhXQ" type="hidden" />
-                          <!-- NEW FIELDS ENDS -->
                         </form>
                       </div>
                     </div>
@@ -246,9 +246,24 @@
     </Layout>
 </template>
 <script>
-    export default {
-      metaInfo: {
-        title: 'City Cycles E-Bike Sale'
-      }
-    }
+export default {
+  metaInfo: {
+    title: 'City Cycles E-Bike Sale'
+  },
+  mounted: function() {
+    console.log('mounted');
+    this.utmMedium = this.$route.query.utm_medium
+    this.utmSource = this.$route.query.utm_source
+    this.utmTerm = this.$route.query.utm_term
+    this.utmCampaign = this.$route.query.utm_campaign
+    this.utmContent = this.$route.query.utm_content
+  },
+  data: () => ({
+    utmMedium: '',
+    utmSource: '',
+    utmTerm: '',
+    utmCampaign: '',
+    utmContent: ''
+  }),
+}
 </script>
