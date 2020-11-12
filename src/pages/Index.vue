@@ -251,22 +251,23 @@
         title: 'City Cycles E-Bike Sale'
       }
     }
-
+</script>
+<script type="text/javascript">
 function parseGET(param) {
-  var searchStr = document.location.search;
-  try {
-      var match = searchStr.match('[?&]' + param + '=([^&]+)');
-      if (match) {
-          var result = match[1];
-          result = result.replace(/\+/g, '%20');
-          result = decodeURIComponent(result);
-          return result;
-      } else {
-          return '';
-      }
-  } catch (e) {
-      return '';
-  }
+    var searchStr = document.location.search;
+    try {
+        var match = searchStr.match('[?&]' + param + '=([^&]+)');
+        if (match) {
+            var result = match[1];
+            result = result.replace(/\+/g, '%20');
+            result = decodeURIComponent(result);
+            return result;
+        } else {
+            return '';
+        }
+    } catch (e) {
+        return '';
+    }
 }
  
 document.getElementById('utm_source').value = parseGET('utm_source');
