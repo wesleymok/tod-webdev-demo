@@ -77,7 +77,7 @@ Here's a blank template to get started:
 
 ### Built With
 
-* [Gridsome]()
+* [Gridsome](https://gridsome.org/)
 * [Tailwindcss]()
 * [Salesforce]()
 
