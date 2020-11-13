@@ -180,15 +180,13 @@
                         </div>
                       </div>
                       <div class="flex flex-wrap -mx-3 mb-6">
-                        <div class="w-full px-3">
-                          <input class="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="phone" maxlength="80" name="phone" type="phone" placeholder="Phone Number" required>
+                        <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                          <input class="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="country" maxlength="40" name="country" type="text" placeholder="Country" required>
                           </div>
-                        </div>
-                      <div class="flex flex-wrap -mx-3 mb-6">
-                        <div class="w-full px-3">
-                          <input class="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="country" name="country" maxlength="40" type="text" placeholder="Country" required>
+                          <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                            <input class="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="phone" maxlength="80" name="phone" type="text" placeholder="Phone Number" required>
+                            </div>
                           </div>
-                        </div>
                         <div class="inline-block relative w-64">
                           <select id="00N4x000000vhv5" name="00N4x000000vhv5" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline" multiple="multiple" title="Product Interest" required>
                               <option value="Crosslite DX 300">Crosslite DX 300</option>
