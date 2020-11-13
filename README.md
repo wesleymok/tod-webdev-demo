@@ -65,16 +65,6 @@
 
 
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo_name`, `twitter_handle`, `email`
-
-
 ### Built With
 
 * [Gridsome](https://gridsome.org/)
@@ -106,9 +96,20 @@ git clone https://github.com/github_username/repo_name.git
 ```sh
 npm install
 ```
-3. To run this locally on your machine, in terminal (or command prompt), navigate to the project directory and type in the command: `gridsome develop`. 
+3. To run this locally on your machine, in terminal (or command prompt), navigate to the project directory and type in the command: 
+```sh
+gridsome develop
+```
 This will spin up the local environment to view the web page (ie.localhost:8080).
 
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
+
+Here's a blank template to get started:
+**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
+`github_username`, `repo_name`, `twitter_handle`, `email`
 
 <!-- USAGE EXAMPLES -->
 ## Usage
