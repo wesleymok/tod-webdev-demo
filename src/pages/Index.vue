@@ -181,6 +181,11 @@
                       </div>
                       <div class="flex flex-wrap -mx-3 mb-6">
                         <div class="w-full px-3">
+                          <input class="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="phone" maxlength="80" name="phone" type="phone" placeholder="Phone Number" required>
+                          </div>
+                        </div>
+                      <div class="flex flex-wrap -mx-3 mb-6">
+                        <div class="w-full px-3">
                           <input class="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="country" name="country" maxlength="40" type="text" placeholder="Country" required>
                           </div>
                         </div>
