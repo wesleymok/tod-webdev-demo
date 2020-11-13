@@ -63,6 +63,7 @@
 * [Gridsome](https://gridsome.org/)
 * [Tailwindcss](https://tailwindcss.com/)
 * [Salesforce](https://www.salesforce.com/ca/?ir=1)
+* [Github Pages](https://pages.github.com/)
 
 
 
@@ -98,19 +99,57 @@ This will spin up the local environment to view the web page (ie.localhost:8080)
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+As apart of Traction on Demand's interview process, I was tasked to build/redesign a lead gen landing page for a store-front that sells eletronic bicyles
 
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo_name`, `twitter_handle`, `email`
+## Requirements
+<ul>
+  <li>Build a form using a Web-to-Lead form in Salesforce</li>
+  <li>Build out a page using whatever framework you prefer - either host this locally or use a
+free service like netlify to deploy, but the form submission has to complete</li>
+  <li>The form must include the following fields:</li>
+  <ul>
+    <li>First Name</li>
+    <li>Last Name</li>
+    <li>Email</li>
+    <li>Product Interest:</li>
+    <ul>
+      <li>Crosslite DX 300</li>
+      <li>Crosslite EVO 9D</li>
+      <li>Crosslite EVO 2020</li>
+      <li>Crosslite Touring Hybrid 8D</li>
+      <li>Crosslite 4D</li>
+      <li>Crosslite Touring 6D</li>
+    </ul>
+    <li>Country</li>
+  <li>Email consent opt in</li>
+  </ul>
+  <li>Analytics must be included on the page & be tracked in Salesforce (for example, a UTM
+    parameter must be recorded on the lead object)</li>
+  <li>Campaign to track the landing page in Salesforce</li>
+  <li>Custom Object for the products offered and associated Custom Fields and Page Layouts</li>
+  <li>Use Apex or workflow rules to trigger an email to the lead upon successful completion</li>
+  </ul>
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## Design Process
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+For this task, I was asked to redesign an example landing page (https://nicprkr.github.io/tod-demo.github.io/) where I am able to use any framework of choice.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+For this particular task, I decided to use Gridsome to generate the static website and Tailwindcss to style everything.
 
+### Reasons for using Gridsome:
+<ul>
+  <li>Easy to create a blank project with a proper file structure</li>
+  <li>It has a hot reloading feature whenever changes are made to the code</li>
+  <li>Easy to host on Github Pages</li>
+</ul>
+
+### Reasons for using Tailwindcss:
+<ul>
+  <li>Contains a lot of built in features</li>
+  <li>Easy to use grid system</li>
+  <li>Easier to maintain styles</li>
+</ul>
 
 
 <!-- ROADMAP -->
