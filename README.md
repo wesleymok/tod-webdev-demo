@@ -78,8 +78,8 @@ Here's a blank template to get started:
 ### Built With
 
 * [Gridsome](https://gridsome.org/)
-* [Tailwindcss]()
-* [Salesforce]()
+* [Tailwindcss](https://tailwindcss.com/)
+* [Salesforce](https://www.salesforce.com/ca/?ir=1)
 
 
 
@@ -106,7 +106,8 @@ git clone https://github.com/github_username/repo_name.git
 ```sh
 npm install
 ```
-
+3. To run this locally on your machine, in terminal (or command prompt), navigate to the project directory and type in the command: `gridsome develop`. 
+This will spin up the local environment to view the web page (ie.localhost:8080).
 
 
 <!-- USAGE EXAMPLES -->
