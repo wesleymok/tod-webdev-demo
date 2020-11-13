@@ -30,6 +30,7 @@
   <p align="center">
     A demo landing page design that integrates certain Salesforce features
     <br />
+    <br />
     <a href="https://wesleymok.github.io/tod-webdev-demo/">View Demo</a>
     ·
     <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
