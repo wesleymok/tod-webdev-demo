@@ -164,7 +164,7 @@
               <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" class="w-full max-w-lg">
 
                 <input type=hidden name="oid" value="00D4x000000JWjA">
-                <input type=hidden name="retURL" value="https://wesleymok.github.io/tod-webdev-demo/submission/">
+                <input type=hidden name="retURL" value="https://wesleymok.github.io/tod-webdev-demo/thankyou/">
 
                 <div class="flex flex-wrap -mx-3 mb-6">
                   <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
