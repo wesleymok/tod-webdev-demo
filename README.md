@@ -31,7 +31,7 @@
     A demo landing page design that integrates certain Salesforce features
     <br />
     <br />
-    <a href="https://wesleymok.github.io/tod-webdev-demo/">View Demo</a>
+    <a href="https://wesleymok.github.io/tod-webdev-demo/?utm_source=google&utm_medium=email&utm_campaign=2020%2BEBike%2BSale&utm_term=city%2Bcycle">View Demo</a>
     ·
     <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
     ·
@@ -133,12 +133,13 @@ free service like netlify to deploy, but the form submission has to complete</li
 <!-- USAGE EXAMPLES -->
 ## Design Process
 
-For this task, I was asked to redesign an example landing page (https://nicprkr.github.io/tod-demo.github.io/) where I am able to use any framework of choice.
+For this task, I was asked to redesign an example landing page (https://nicprkr.github.io/tod-demo.github.io/) where I was able to use any framework of my choice.
 
-For this particular task, I decided to use Gridsome to generate the static website and Tailwindcss to style everything.
+For this particular task, I decided to use Gridsome to generate the static website, Tailwindcss to style everything, and Github Pages to host the landing page. 
 
 ### Reasons for using Gridsome:
 <ul>
+  <li>My familiarity with the framework</li>
   <li>Easy to create a blank project with a proper file structure</li>
   <li>It has a hot reloading feature whenever changes are made to the code</li>
   <li>Easy to host on Github Pages</li>
@@ -146,57 +147,57 @@ For this particular task, I decided to use Gridsome to generate the static websi
 
 ### Reasons for using Tailwindcss:
 <ul>
-  <li>Contains a lot of built in features</li>
+  <li>Contains a lot of built in standard features</li>
   <li>Easy to use grid system</li>
+  <li>Comes with preset media queries</li>
   <li>Easier to maintain styles</li>
 </ul>
 
+## Design Choices
 
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/github_username/repo_name/issues) for a list of proposed features (and known issues).
+During my decisions when designing this landing page, I wanted to make it appear as if it came from an actual website. The first part of my design was to generate the look and feel of a website by making a navigation and footer. The second part was to create a simple logo to represent `City Cycles`. This process just involved me browsing for a free to use SVG logo from `freeicons.io` and choosing a font style from Google Fonts to use for the landing page (Poppins). Since the logo I chose had an orange background, I decided to use that as the main color scheme for the whole page.
 
 
+## Breakdown of the Salesforce Requirements
 
-<!-- CONTRIBUTING -->
-## Contributing
+### 1. Build a form using a Web-to-Lead form in Salesforce
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+This was a straight forward step to implement since I had the form already designed. In the Salesforce dashboard, navigate to the top right `gear` icon and a dropdown will show up with a link to go to the `Setup`. Once you are there, type in the `Quick Search` tab on the top left `Web-to-Lead` and the link will pop up to that page. From there, you will be on the `Web-to-Lead` setup page where you can create the form.
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+#### Extra Step:
+Before I created the form, I noticed that I had to add in the new fields that were given in the instructions. These were the names of the bicycles that are being advertised on the landing page. This extra step required me to go into the `Setup` page and navigate to the `Object Manager` tab. From there look for the `Lead` standard object and press on the link. You will then see the `Fields & Relationships` tab on the left and that will allow you to add new fields to the object.
+
+#### Repeat the extra step above as needed whenever you need to add new fields to an object.
+
+After adding in the new fields for the bike names, I made the Web-to-Lead form with the appropiate fields. The setup wizard will then generate a generic HTML form with the fields you selected as well as a unique link like this:
+
+```"https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST"```
+
+I already knew that this link was the key to connecting the form to the Salesforce dashboard. Since I already had a form created and styled, I used the information that was given from creating the Web-to-Lead form and added it to my own form by replacing some key values (ex. Replacing input `id` names). 
+
+The final step was to test the form by inputting some information and to check if a new lead is generated with the form information.
 
 
+### 2. Analytics must be included on the page & be tracked in Salesforce
+
+For this requirement I decided to use the example that was presented which was tracking UTM parameters. This step required me to add in the UTM fields into the `Leads` object and to recreate the Web-to-Lead form. The UTM fields were then put into the form as hidden fields. If you go inside the `Index.vue` code, there is a Vue component on the very bottom that interacts with the UTM parameters. This component strips the values of each UTM parameter (UTM Content, UTM Medium, etc) from the URL and routes it into the template. Once you submit the form and a new lead is generated, you will see in Salesforce that the new lead will have the UTM parameter values in its details.
+
+### 3. Campaign to track the landing page in Salesforce (I am not sure if I did this right)
+
+I created a new campaign in the `Campaign` tab and named it `City Cycles`. I then created another campaign called `2020 E-Bike Sale` and made `City Cycles` the parent campaign.
+
+### 4. Custom Object for the products offered and associated Custom Fields and Page Layouts
+
+On the `Setup` page, navigate to the `Object Manager` tab and from there create a new `Custom Object`. I was initially going to make a `Products` object but I noticed that it was already a Standard Object in Salesforce. I wanted this to be as unique as possible so I decided to name the Custom Object as `Bikes`. Within tha object I made `Custom Fields` called `Bike Name`, `Price`, and `SKU`. At this point I noticed that the `Page Layout` was already generated and was not sure If I needed to do anything else. 
+
+### 5. Use Apex or workflow rules to trigger an email to the lead upon successful completion
+
+This was probably the most confusing part of the task. When I was researching how to do workflow rules and triggers in Salesforce, all the guides that I followed said to navigate to a `Triggers` tab or `Create Workflow Rule` tab. However, I noticed that I did not have those tabs even though I followed their instructions. My assumption is that since I am on a free trial for Salesforce, I might not have access to all of its features. With that being said, I did find an alternative called `Email Alerts` in `Process Automation` -> `Workflow Actions` where I was able to set up an automated email that are sent to leads once they sumbit the form. 
 
 <!-- LICENSE -->
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
-
-
-
-<!-- CONTACT -->
-## Contact
-
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
-
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
-
-
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-
-* []()
-* []()
-* []()
-
-
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
