@@ -93,7 +93,7 @@ This will spin up the local environment to view the web page (ie.localhost:8080)
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-As apart of Traction on Demand's interview process, I was tasked to build/redesign a lead gen landing page for a store-front that sells eletronic bicyles
+As apart of Traction on Demand's interview process, I was tasked to build/redesign a lead gen landing page for a store-front that sells eletronic bicycles
 
 ## Requirements
 <ul>
