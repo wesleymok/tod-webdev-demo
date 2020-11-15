@@ -153,7 +153,7 @@ I designed a navigation bar as well as a footer to make it look like the landing
 
 #### Note
 
-Poppins will look differently on other web browsers (Safari, Firefox) compared to Google Chrome. Safari and Firefox will display the font in a different boldness and density.
+Poppins will look different on other web browsers (Safari, Firefox) compared to Google Chrome. Safari and Firefox will display the font in a different boldness and density.
 
 
 ## Breakdown of the Salesforce Requirements
