@@ -184,7 +184,7 @@
                           <input class="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="country" maxlength="40" name="country" type="text" placeholder="Country" required>
                           </div>
                           <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                            <input class="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="phone" maxlength="80" name="phone" type="text" placeholder="Phone Number" required>
+                            <input class="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="phone" maxlength="9" name="phone" type="text" placeholder="Phone Number" required>
                             </div>
                           </div>
                         <div class="inline-block relative w-64">

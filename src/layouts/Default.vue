@@ -62,6 +62,7 @@
         <div class="mb-8 lg:mb-0">
             <span class="font-semibold tracking-tight">City Cycles</span>
           <div class="text-xs">Copyright {{ new Date().getFullYear() }}. All rights reserved.</div>
+          <div class="text-xs">Icons made by <a href="https://www.flaticon.com/authors/dinosoftlabs" title="DinosoftLabs">DinosoftLabs</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
         </div>
         <ul class="flex items-center">
             <li class="mr-8 mb-2">

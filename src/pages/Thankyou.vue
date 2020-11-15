@@ -8,7 +8,7 @@
                         <p class="leading-relaxed mb-8 font-normal">We have received your consultation submission and will be in touch with you shortly.
                         </p>
                         <div class="flex justify-center">
-                                <g-link to="/">
+                                <g-link to="https://wesleymok.github.io/tod-webdev-demo/?utm_source=google&utm_medium=email&utm_campaign=2020%2BEBike%2BSale&utm_term=city%2Bcycle">
                                     <button class="shadow bg-orange-500 hover:bg-orange-400 focus:shadow-outline focus:outline-none text-white font-semibold py-2 px-4 rounded" type="button">
                                         Return to Home
                                       </button>
