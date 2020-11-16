@@ -3,10 +3,11 @@
       <head>
           <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8"/>
       </head>
+      <!--HERO BANNER STARTS HERE-->
       <div class="hero bg-gray-100 py-4">
-        <!-- container -->
+        <!-- HERO CONTAINER -->
         <div class="hero container bg-gray-100 py-8 px-8 justify-between relative sm:px-8 lg:px-16 xl:px-20 mx-auto">
-          <!-- hero wrapper -->
+          <!-- HERO WRAPPER -->
           <div class="hero-wrapper flex flex-wrap -mx-1 overflow-hidden grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
             <!-- hero text -->
             <div class="hero-text col-span-6">
@@ -15,7 +16,7 @@
                 <p class="text-xl text-gray-800 text-base leading-relaxed mt-8 font-semibold">Last chance to own a discounted 2019 model!</p>
                 <p class="text-xl text-orange-500 text-base leading-relaxed mt-8 font-semibold">See Details Below</p>
               </div>
-              <!-- hero image -->
+              <!-- HERO IMAGE -->
               <div class="hero-image col-span-6">
                 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                 <div class="flex flex-wrap px-16">
@@ -69,12 +70,12 @@
                   </svg>
                 </div>
               </div>
+              <!--HERO IMAGE ENDS-->
             </div>
           </div>
         </div>
-        <!-- end hero -->
-        <!-- <div class="news container mx-auto text-xl py-6 border-b-2 border-gray-500"> --></div>
-      <div class="events container mx-auto py-6">
+        <!--HERO BANNER ENDS-->
+      <div class="left container mx-auto py-6">
         <div class="flex flex-wrap -mx-1 overflow-hidden sm:-mx-1">
           <div class="my-1 px-1 w-full overflow-hidden lg:w-1/2 xl:w-1/2">
             <div class="h-full bg-background-primary bg-white p-4 flex flex-col justify-between leading-normal">
@@ -158,6 +159,7 @@
               </div>
             </div>
           </div>
+          <!--FORM STARTS HERE-->
           <div class="my-1 px-1 w-full overflow-hidden lg:w-1/2 xl:w-1/2">
             <div class="h-full bg-background-primary bg-white p-4 flex flex-col justify-between leading-normal">
               <div class="text-orange-500 font-semibold text-2xl mb-2">Book Your Consultation</div>
@@ -184,7 +186,7 @@
                           <input class="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="country" maxlength="40" name="country" type="text" placeholder="Country" required>
                           </div>
                           <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                            <input class="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="phone" maxlength="9" name="phone" type="text" placeholder="Phone Number" required>
+                            <input class="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="phone" maxlength="10" name="phone" type="text" placeholder="Phone Number" required>
                             </div>
                           </div>
                         <div class="inline-block relative w-64">
@@ -230,6 +232,7 @@
                         </form>
                       </div>
                     </div>
+                    <!--FORM ENDS-->
                     <div class="h-full bg-background-primary bg-white p-4 flex flex-col justify-between leading-normal">
                       <div class="mb-8">
                         <div class="text-orange-500 font-semibold text-xl mb-2">About Us</div>

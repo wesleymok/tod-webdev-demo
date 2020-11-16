@@ -20,16 +20,16 @@
           <g-link v-else to="/" class="hover:text-orange-500">Home</g-link>
         </li>
         <li>
-          <a v-if="$route.path === '/projects/'" class="hover:text-orange-500">Shop</a>
-          <g-link v-else to="/projects/" class="hover:text-orange-500">Shop</g-link>
+          <a v-if="$route.path === '/'" class="hover:text-orange-500">Shop</a>
+          <g-link v-else to="/" class="hover:text-orange-500">Shop</g-link>
         </li>
         <li>
-          <a v-if="$route.path === '/projects/'" class="hover:text-orange-500">About Us</a>
-          <g-link v-else to="/projects/" class="hover:text-orange-500">About Us</g-link>
+          <a v-if="$route.path === '/'" class="hover:text-orange-500">About Us</a>
+          <g-link v-else to="/" class="hover:text-orange-500">About Us</g-link>
           </li>
         <li>
-          <a v-if="$route.path === '/projects/'" class="hover:text-orange-500">Contact</a>
-          <g-link v-else to="/projects/" class="hover:text-orange-500">Contact</g-link>
+          <a v-if="$route.path === '/'" class="hover:text-orange-500">Contact</a>
+          <g-link v-else to="/" class="hover:text-orange-500">Contact</g-link>
         </li>
         <li class="mr-8 mb-2">
           <a href="https://instagram.com" target="_blank" class="text-white hover:text-orange-500">
@@ -42,8 +42,8 @@
           </a>
         </li>
           <li class="text-orange-500">
-            <a v-if="$route.path === '/projects/'" class="hover:text-white">Login</a>
-            <g-link v-else to="/projects/" class="hover:text-white">Login</g-link>
+            <a v-if="$route.path === '/'" class="hover:text-white">Login</a>
+            <g-link v-else to="/" class="hover:text-white">Login</g-link>
           </li>
           <li>
             <button class="bg-transparent hover:bg-orange-500 text-white hover:text-white py-2 px-4 border border-orange-500 hover:border-transparent rounded-full">
