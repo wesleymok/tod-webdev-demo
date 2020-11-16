@@ -147,7 +147,7 @@ I decided to use Gridsome to generate the static website, Tailwindcss to style e
 
 ## Design Process
 
-I designed a navigation bar as well as a footer to make it look like the landing page is coming from an actual storefront on a website. I made a simple logo by finding a free to use SVG logo from `freeicons.io`. I searched up "Bikes" in their search bar and I was given a wide variety to choose from. I decided to use one with an orange background which also led me to use that color as the main color scheme for the landing page. The next step was to select a font style from Google Fonts to use. My goal was to find a font that was modern looking, easy on the eyes, and also easy to read when used in large paragraphs. I ended up choosing a font style called <a href="https://fonts.google.com/specimen/Poppins?query=Poppins" target="_blank">Poppins</a> to use for the landing page. 
+I designed a navigation bar as well as a footer to make it look like the landing page is coming from an actual storefront on a website. I made a simple logo by finding a free to use SVG icon from `freeicons.io`. I searched up "Bikes" in their search bar and I was given a wide variety to choose from. I decided to use one with an orange background which also led me to use that color as the main color scheme for the landing page. The next step was to select a font style from Google Fonts to use. My goal was to find a font that was modern looking and easy to read when used in large sentences. I ended up choosing a font style called <a href="https://fonts.google.com/specimen/Poppins?query=Poppins" target="_blank">Poppins</a> to use for the landing page. 
 
 #### Note
 
