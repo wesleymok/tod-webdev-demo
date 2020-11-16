@@ -31,7 +31,7 @@
     A demo landing page design that integrates certain Salesforce features
     <br />
     <br />
-    <a href="https://wesleymok.github.io/tod-webdev-demo/?utm_source=google&utm_medium=email&utm_campaign=2020%2BEBike%2BSale&utm_term=city%2Bcycle">View Demo</a>
+    <a href="https://wesleymok.github.io/tod-webdev-demo/?utm_source=google&utm_medium=email&utm_campaign=2020%2BEBike%2BSale&utm_term=city%2Bcycle" target="_blank>View Demo</a>
     
   </p>
 </p>
